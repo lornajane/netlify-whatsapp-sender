@@ -1,0 +1,24 @@
+{
+  "name": "ifttt-messages-api",
+  "version": "0.0.1",
+  "description": "Sender utility for Vonage Messages API",
+  "main": "index.js",
+  "dependencies": {
+    "netlify-cli": "^2.48.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "netlify build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lornajane/netlify-whatsapp-sender.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lornajane/netlify-whatsapp-sender/issues"
+  },
+  "homepage": "https://github.com/lornajane/netlify-whatsapp-sender#readme"
+}
