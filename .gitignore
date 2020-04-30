@@ -1,5 +1,6 @@
 node_modules/*
 functions/*.zip
+.env
 
 # Local Netlify folder
 .netlify

@@ -4,9 +4,12 @@
   "description": "Sender utility for Vonage Messages API",
   "main": "index.js",
   "dependencies": {
-    "netlify-cli": "^2.48.0"
+    "netlify-cli": "^2.48.0",
+    "nexmo": "^2.7.0-beta-1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  },
   "scripts": {
     "build": "netlify build",
     "test": "echo \"Error: no test specified\" && exit 1"
