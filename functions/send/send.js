@@ -37,13 +37,9 @@ exports.handler = async (event, context) => {
       }
     );
 
-
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: `Greetings ${subject}` })
-      // // more keys you can return:
-      // headers: { "headerName": "headerValue", ... },
-      // isBase64Encoded: true,
+      body: JSON.stringify({ message: "OK"})
     }
   } catch (err) {
     return { statusCode: 500, body: err.toString() }
