@@ -5,9 +5,10 @@ exports.handler = async (event, context) => {
   try {
     const subject = event.queryStringParameters.name || 'World'
     const body = event.body
-    console.log(body)
     const data = JSON.parse(body)
     console.log(data)
+    console.log(data['Title'])
+    console.log(data['From'])
 
     const nexmo = new Nexmo({
       apiKey: process.env.NEXMO_API_KEY,
@@ -24,7 +25,7 @@ exports.handler = async (event, context) => {
       {
         "content": {
           "type": "text",
-          "text": "This is a WhatsApp Message text message sent using the Messages API"
+          "text": "New message from " + data['From'] + ": " + data['Title']
         }
       },
       (err, data) => {
